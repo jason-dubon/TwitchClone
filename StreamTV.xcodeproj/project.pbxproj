@@ -11,6 +11,14 @@
 		320221AB2AF128A200A3EE31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320221AA2AF128A200A3EE31 /* ContentView.swift */; };
 		320221AD2AF128A400A3EE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320221AC2AF128A400A3EE31 /* Assets.xcassets */; };
 		320221B02AF128A400A3EE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320221AF2AF128A400A3EE31 /* Preview Assets.xcassets */; };
+		320221B82AF128E200A3EE31 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 320221B72AF128E200A3EE31 /* StreamVideo */; };
+		320221BA2AF128E200A3EE31 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 320221B92AF128E200A3EE31 /* StreamVideoSwiftUI */; };
+		320221BC2AF128E200A3EE31 /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 320221BB2AF128E200A3EE31 /* StreamVideoUIKit */; };
+		320221BE2AF12A0B00A3EE31 /* LivestreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320221BD2AF12A0B00A3EE31 /* LivestreamView.swift */; };
+		320221C12AF1306100A3EE31 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 320221C02AF1306100A3EE31 /* StreamChatSwiftUI */; };
+		320221C42AF15CA200A3EE31 /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 320221C32AF15CA200A3EE31 /* EffectsLibrary */; };
+		320221C62AF15E7800A3EE31 /* HostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320221C52AF15E7800A3EE31 /* HostView.swift */; };
+		320221C82AF1620300A3EE31 /* ChatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320221C72AF1620300A3EE31 /* ChatSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,9 @@
 		320221AA2AF128A200A3EE31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		320221AC2AF128A400A3EE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320221AF2AF128A400A3EE31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		320221BD2AF12A0B00A3EE31 /* LivestreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivestreamView.swift; sourceTree = "<group>"; };
+		320221C52AF15E7800A3EE31 /* HostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostView.swift; sourceTree = "<group>"; };
+		320221C72AF1620300A3EE31 /* ChatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320221C12AF1306100A3EE31 /* StreamChatSwiftUI in Frameworks */,
+				320221C42AF15CA200A3EE31 /* EffectsLibrary in Frameworks */,
+				320221BA2AF128E200A3EE31 /* StreamVideoSwiftUI in Frameworks */,
+				320221BC2AF128E200A3EE31 /* StreamVideoUIKit in Frameworks */,
+				320221B82AF128E200A3EE31 /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +71,9 @@
 				320221AA2AF128A200A3EE31 /* ContentView.swift */,
 				320221AC2AF128A400A3EE31 /* Assets.xcassets */,
 				320221AE2AF128A400A3EE31 /* Preview Content */,
+				320221BD2AF12A0B00A3EE31 /* LivestreamView.swift */,
+				320221C52AF15E7800A3EE31 /* HostView.swift */,
+				320221C72AF1620300A3EE31 /* ChatSection.swift */,
 			);
 			path = StreamTV;
 			sourceTree = "<group>";
@@ -83,6 +102,13 @@
 			dependencies = (
 			);
 			name = StreamTV;
+			packageProductDependencies = (
+				320221B72AF128E200A3EE31 /* StreamVideo */,
+				320221B92AF128E200A3EE31 /* StreamVideoSwiftUI */,
+				320221BB2AF128E200A3EE31 /* StreamVideoUIKit */,
+				320221C02AF1306100A3EE31 /* StreamChatSwiftUI */,
+				320221C32AF15CA200A3EE31 /* EffectsLibrary */,
+			);
 			productName = StreamTV;
 			productReference = 320221A52AF128A200A3EE31 /* StreamTV.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,11 @@
 				Base,
 			);
 			mainGroup = 3202219C2AF128A200A3EE31;
+			packageReferences = (
+				320221B62AF128E200A3EE31 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+				320221BF2AF1306100A3EE31 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+				320221C22AF15CA200A3EE31 /* XCRemoteSwiftPackageReference "effects-library" */,
+			);
 			productRefGroup = 320221A62AF128A200A3EE31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320221C82AF1620300A3EE31 /* ChatSection.swift in Sources */,
 				320221AB2AF128A200A3EE31 /* ContentView.swift in Sources */,
+				320221BE2AF12A0B00A3EE31 /* LivestreamView.swift in Sources */,
+				320221C62AF15E7800A3EE31 /* HostView.swift in Sources */,
 				320221A92AF128A200A3EE31 /* StreamTVApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +309,9 @@
 				DEVELOPMENT_TEAM = 8U63ZP8KK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to enjoy our app";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to enjoy our app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "please allow access please please ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +341,9 @@
 				DEVELOPMENT_TEAM = 8U63ZP8KK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to enjoy our app";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to enjoy our app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "please allow access please please ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +384,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		320221B62AF128E200A3EE31 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		320221BF2AF1306100A3EE31 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.40.0;
+			};
+		};
+		320221C22AF15CA200A3EE31 /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		320221B72AF128E200A3EE31 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 320221B62AF128E200A3EE31 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		320221B92AF128E200A3EE31 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 320221B62AF128E200A3EE31 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+		320221BB2AF128E200A3EE31 /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 320221B62AF128E200A3EE31 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoUIKit;
+		};
+		320221C02AF1306100A3EE31 /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 320221BF2AF1306100A3EE31 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
+		};
+		320221C32AF15CA200A3EE31 /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 320221C22AF15CA200A3EE31 /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3202219D2AF128A200A3EE31 /* Project object */;
 }
